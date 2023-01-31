@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tip Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Tip Calculator</h1>
+            <form id='calculatorForm'>
+                <input type='text' id ='preTipValue'>
+                <br>
+                <br>
+                <button type="text" onclick="calculateTip(0.1)">10%</button>
+                <button type="text" onclick="calculateTip(0.15)">15%</button>
+                <button type="text" onclick="calculateTip(0.2)"'>20%</button>
+                <br>
+                <br>
+                <input type ='text' id="tipRate"> 
+                <br>
+
+                <button type="button" onClick="calculateTip()">Calculate Tax</button>
+            </form>
+        </div>
+        <p id="result"></p>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
